@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admissions | Horizon Institute of Technology</title>
+  <meta name="description" content="Apply online for IT courses, DAE diplomas and intermediate programs at Horizon Institute of Technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container">
+  <span>📞 <a href="tel:+920420000123">+92 42 0000 123</a> &nbsp;|&nbsp; ✉️ <a href="mailto:info@horizon-institute.example">info@horizon-institute.example</a></span>
+  <span>Admissions Open – Session 2026-27</span>
+</div></div>
+
+<header class="site-header"><div class="container nav">
+  <a class="brand" href="index.html"><span class="logo">H</span><span>Horizon<small>Institute of Technology</small></span></a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="students.html">Students</a>
+    <a href="admissions.html">Admissions</a>
+    <a class="btn btn-accent" href="admissions.html">Apply Now</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Admissions</div>
+  <h1>Admissions 2026-27</h1>
+  <p>Apply online in minutes. Our admission team will guide you through every step.</p>
+</div></section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">How It Works</span><h2>Four Simple Steps</h2></div>
+    <div class="steps">
+      <div class="step reveal"><h3>Apply Online</h3><p>Fill the form below with your details.</p></div>
+      <div class="step reveal"><h3>Submit Documents</h3><p>Bring copies of certificates, CNIC/B-Form and photos.</p></div>
+      <div class="step reveal"><h3>Interview / Test</h3><p>Short counselling and aptitude session.</p></div>
+      <div class="step reveal"><h3>Confirm Seat</h3><p>Pay the admission fee and receive your roll number.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Eligibility & Fees</span><h2>Programs at a Glance</h2></div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Program</th><th>Eligibility</th><th>Duration</th><th>Monthly Fee (dummy)</th></tr></thead>
+        <tbody>
+          <tr><td><b>IT Courses</b></td><td>Matric or above</td><td>3–6 Months</td><td>PKR 6,000</td></tr>
+          <tr><td><b>DAE (All trades)</b></td><td>Matric (Science) with 40%+</td><td>3 Years</td><td>PKR 7,500</td></tr>
+          <tr><td><b>FSc Pre-Engineering / Pre-Medical</b></td><td>Matric (Science) with 60%+</td><td>2 Years</td><td>PKR 9,000</td></tr>
+          <tr><td><b>ICS / I.Com</b></td><td>Matric with 45%+</td><td>2 Years</td><td>PKR 8,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apply">
+  <div class="container form-wrap">
+    <form class="card reveal" id="admissionForm" novalidate>
+      <h2>Online Application Form</h2>
+      <p>Fields marked * are required.</p>
+      <div class="form-grid">
+        <div class="field"><label for="fullName">Full Name *</label><input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="e.g. Ali Raza"><span class="err"></span></div>
+        <div class="field"><label for="fatherName">Father's Name *</label><input id="fatherName" name="fatherName" type="text" placeholder="e.g. Raza Ahmed"><span class="err"></span></div>
+        <div class="field"><label for="phone">Mobile Number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="0300-0000000"><span class="err"></span></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"><span class="err"></span></div>
+        <div class="field"><label for="dob">Date of Birth *</label><input id="dob" name="dob" type="date"><span class="err"></span></div>
+        <div class="field"><label for="lastClass">Last Qualification *</label>
+          <select id="lastClass" name="lastClass"><option value="">Select</option><option>Matric (Science)</option><option>Matric (Arts)</option><option>Intermediate</option><option>Other</option></select><span class="err"></span></div>
+        <div class="field"><label for="program">Program *</label>
+          <select id="program" name="program"><option value="">Select program</option><option>IT Course</option><option>DAE</option><option>Intermediate</option></select><span class="err"></span></div>
+        <div class="field"><label for="course">Course / Group *</label>
+          <select id="course" name="course"><option value="">Select course / group</option></select><span class="err"></span></div>
+        <div class="field full"><label for="notes">Message (optional)</label><textarea id="notes" name="notes" rows="3" placeholder="Any questions or scholarship request?"></textarea></div>
+      </div>
+      <button class="btn btn-accent" type="submit" style="margin-top:1.4rem">Submit Application</button>
+      <div id="formMsg" role="status" aria-live="polite"></div>
+    </form>
+
+    <aside class="reveal">
+      <div class="side-box">
+        <h3>Documents Required</h3>
+        <ul><li>Matric / last result card (photocopy)</li><li>CNIC / B-Form of student and guardian</li><li>4 passport-size photographs</li><li>Domicile (for DAE)</li></ul>
+        <h3 style="margin-top:1.4rem">Admission Office</h3>
+        <p>📍 Plot 24-C, Knowledge Avenue,<br>Sample Town, Lahore<br>📞 042-0000-1234<br>📱 0300-0000000<br>🕘 Mon–Sat, 9:00am – 5:00pm</p>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <a class="brand" href="index.html" style="color:#fff"><span class="logo">H</span><span>Horizon<small style="color:#94a3b8">Institute of Technology</small></span></a>
+      <p style="margin-top:1rem">Quality technical and formal education for tomorrow's leaders.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="students.html">Students</a></li><li><a href="admissions.html">Admissions</a></li></ul></div>
+    <div><h4>Programs</h4><ul><li><a href="admissions.html?program=IT%20Course">IT Courses</a></li><li><a href="admissions.html?program=DAE">DAE Diplomas</a></li><li><a href="admissions.html?program=Intermediate">FSc / ICS / I.Com</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>📍 Plot 24-C, Knowledge Avenue, Sample Town, Lahore</li><li>📞 +92 42 0000 123</li><li>📱 +92 300 0000000</li><li>✉️ info@horizon-institute.example</li></ul></div>
+  </div>
+  <div class="copy">© <span class="year">2026</span> Horizon Institute of Technology. All rights reserved. (Demo content)</div>
+</footer>
+<button class="to-top" aria-label="Back to top">↑</button>
+<script src="main.js" defer></script>
+</body>
+</html>

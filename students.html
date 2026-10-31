@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Students | Horizon Institute of Technology</title>
+  <meta name="description" content="Meet our top students, check results and explore student life at Horizon Institute of Technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container">
+  <span>📞 <a href="tel:+920420000123">+92 42 0000 123</a> &nbsp;|&nbsp; ✉️ <a href="mailto:info@horizon-institute.example">info@horizon-institute.example</a></span>
+  <span>Admissions Open – Session 2026-27</span>
+</div></div>
+
+<header class="site-header"><div class="container nav">
+  <a class="brand" href="index.html"><span class="logo">H</span><span>Horizon<small>Institute of Technology</small></span></a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="students.html">Students</a>
+    <a href="admissions.html">Admissions</a>
+    <a class="btn btn-accent" href="admissions.html">Apply Now</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> / Students</div>
+  <h1>Student Corner</h1>
+  <p>Celebrate our achievers, check your result and explore life on campus.</p>
+</div></section>
+
+<!-- Result lookup -->
+<section class="section">
+  <div class="container result-box">
+    <div class="section-head reveal" style="margin-bottom:1.5rem"><span class="eyebrow">Result Portal</span><h2>Check Your Result</h2><p>Enter your roll number (demo: <b>HIT-1001</b> to <b>HIT-1006</b>).</p></div>
+    <form id="resultForm" class="card" style="display:flex;gap:.8rem;flex-wrap:wrap">
+      <input id="roll" type="text" placeholder="e.g. HIT-1001" required style="flex:1 1 200px" aria-label="Roll number">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div id="resultOut" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- Toppers -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Hall of Fame</span><h2>Our Top Achievers</h2></div>
+    <div class="toolbar">
+      <div class="tabs" data-filter-group="#studentGrid" style="margin:0;justify-content:flex-start">
+        <button class="tab active" data-cat="all">All</button>
+        <button class="tab" data-cat="it">IT</button>
+        <button class="tab" data-cat="dae">DAE</button>
+        <button class="tab" data-cat="inter">Intermediate</button>
+      </div>
+      <input class="search" id="studentSearch" type="search" placeholder="🔍 Search student or course..." aria-label="Search students">
+    </div>
+    <div class="grid g4" id="studentGrid">
+      <div class="card student" data-cat="inter"><div class="avatar">AK</div><h3>Ayesha Khan</h3><p>FSc Pre-Engineering</p><div class="score">92.4%</div><span class="tag green">1st Position</span></div>
+      <div class="card student" data-cat="inter"><div class="avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">SF</div><h3>Sana Fatima</h3><p>FSc Pre-Medical</p><div class="score">90.8%</div><span class="tag green">Board Top 10</span></div>
+      <div class="card student" data-cat="dae"><div class="avatar" style="background:linear-gradient(135deg,#10b981,#0ea5e9)">UT</div><h3>Usman Tariq</h3><p>DAE Electrical</p><div class="score">88.5%</div><span class="tag amber">Gold Medal</span></div>
+      <div class="card student" data-cat="dae"><div class="avatar" style="background:linear-gradient(135deg,#6366f1,#06b6d4)">BH</div><h3>Bilal Hussain</h3><p>DAE Computer IT</p><div class="score">87.2%</div><span class="tag amber">Silver Medal</span></div>
+      <div class="card student" data-cat="it"><div class="avatar" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">HA</div><h3>Hamza Ali</h3><p>Web Development</p><div class="score">96%</div><span class="tag">Best Project</span></div>
+      <div class="card student" data-cat="it"><div class="avatar" style="background:linear-gradient(135deg,#ef4444,#f59e0b)">MN</div><h3>Maryam Noor</h3><p>Graphic Design</p><div class="score">94%</div><span class="tag">Top Portfolio</span></div>
+      <div class="card student" data-cat="it"><div class="avatar" style="background:linear-gradient(135deg,#0ea5e9,#22c55e)">DS</div><h3>Daniyal Sheikh</h3><p>Python & AI Basics</p><div class="score">93%</div><span class="tag">Best Capstone</span></div>
+      <div class="card student" data-cat="inter"><div class="avatar" style="background:linear-gradient(135deg,#14b8a6,#3b82f6)">RZ</div><h3>Rabia Zafar</h3><p>ICS</p><div class="score">89.6%</div><span class="tag green">Merit Scholar</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Student life -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Campus Life</span><h2>Beyond the Classroom</h2></div>
+    <div class="grid g3">
+      <div class="card reveal"><div class="icon">⚽</div><h3>Sports Week</h3><p>Annual cricket, football and indoor tournaments each December.</p></div>
+      <div class="card reveal"><div class="icon">🚀</div><h3>Tech Expo</h3><p>Students showcase apps, circuits and science projects to visitors and employers.</p></div>
+      <div class="card reveal"><div class="icon">🎤</div><h3>Debate & Career Clubs</h3><p>Build communication, leadership and CV skills with mentors.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section"><div class="container"><div class="cta reveal">
+  <div><h2>Be our next success story</h2><p>Join hundreds of students building their future at Horizon.</p></div>
+  <a class="btn" href="admissions.html">Apply Now</a>
+</div></div></section>
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <a class="brand" href="index.html" style="color:#fff"><span class="logo">H</span><span>Horizon<small style="color:#94a3b8">Institute of Technology</small></span></a>
+      <p style="margin-top:1rem">Quality technical and formal education for tomorrow's leaders.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="students.html">Students</a></li><li><a href="admissions.html">Admissions</a></li></ul></div>
+    <div><h4>Programs</h4><ul><li><a href="admissions.html?program=IT%20Course">IT Courses</a></li><li><a href="admissions.html?program=DAE">DAE Diplomas</a></li><li><a href="admissions.html?program=Intermediate">FSc / ICS / I.Com</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>📍 Plot 24-C, Knowledge Avenue, Sample Town, Lahore</li><li>📞 +92 42 0000 123</li><li>📱 +92 300 0000000</li><li>✉️ info@horizon-institute.example</li></ul></div>
+  </div>
+  <div class="copy">© <span class="year">2026</span> Horizon Institute of Technology. All rights reserved. (Demo content)</div>
+</footer>
+<button class="to-top" aria-label="Back to top">↑</button>
+<script src="main.js" defer></script>
+</body>
+</html>
